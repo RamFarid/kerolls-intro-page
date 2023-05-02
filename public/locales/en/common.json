@@ -1,0 +1,17 @@
+{
+  "title": "Kerolls Tawfik Salon",
+  "card": {
+    "title": "Kerolls Tawfik",
+    "subtitle": "Owner of a hairdressing salon"
+  },
+  "btns": {
+    "primary": "CONNECT",
+    "secondary": "SAVE CONTACTS"
+  },
+  "introducingText": "My salon provided many services not only hair straightener visit me now",
+  "address": "Behind family land، El Doblomasiean Street Branch from Ahmed bahgat street, Corniche El Maadi, 11728",
+  "offer": {
+    "title": "Special offer for you!",
+    "body": "Come to Kerolls Salon and enjoy <b style=\"font-weight: 900;\">free</b> hair straightener and hair dryer on Wednesday of the first week of every month"
+  }
+}
