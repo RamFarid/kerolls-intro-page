@@ -3,6 +3,9 @@ import { createTheme } from '@mui/material/styles'
 
 const darkTheme = createTheme({
   palette: {
+    background: {
+      portal: '#1212129e',
+    },
     mode: 'dark',
     primary: {
       main: '#de8f41',
