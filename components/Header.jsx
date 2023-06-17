@@ -42,8 +42,9 @@ function Header() {
             md: 'unset',
           }}
         >
-          <Image
-            src={myLogo}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={'/imgs/kerolls-logo.jpg'}
             alt='Kerolls hairstylist salon'
             width={150} // 384-269
             height={100}
