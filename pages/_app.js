@@ -17,7 +17,7 @@ const MyApp = ({
   pageProps,
 }) => {
   const {
-    i18n: { language, dir },
+    i18n: { language },
   } = useTranslation()
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
@@ -47,7 +47,7 @@ const MyApp = ({
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         {isLoading && <Loader />}
-        <main lang={language} dir={dir(language)}>
+        <main lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>
           <Component {...pageProps} />
         </main>
       </ThemeProvider>

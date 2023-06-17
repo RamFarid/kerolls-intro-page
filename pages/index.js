@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Container from '@mui/material/Container'
-import Header from '@/components/Header'
 import IntroducingCard from '@/components/IntroducingCard'
 import Actions from '@/components/Actions'
 import Links from '@/components/Links'
@@ -22,12 +21,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className={inter.className}>
-        {/* <Header /> */}
         <Container maxWidth='sm'>
           <IntroducingCard />
           <Actions />
           <Links />
-          {/* <IntroducingText /> */}
         </Container>
         <Footer />
       </div>

@@ -1,7 +1,5 @@
-import { Button, Stack, SxProps } from '@mui/material'
+import { Button, Stack } from '@mui/material'
 import { useTranslation } from 'next-i18next'
-import React from 'react'
-// import saveContacts from '@/public/contatcs.pdf'
 
 const styles = {
   btnsAction: {

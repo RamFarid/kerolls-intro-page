@@ -5,7 +5,6 @@ import {
   Typography,
   Link,
   Avatar,
-  useTheme,
 } from '@mui/material'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
 import InstagramIcon from '@mui/icons-material/Instagram'
