@@ -27,15 +27,6 @@ function Actions() {
   return (
     <Stack flexDirection={'row'} alignItems={'center'} gap={3}>
       <Button
-        variant='text'
-        sx={{ ...styles.btnsAction, ...styles.btnSecondary }}
-        href={'/pdfs/kerolls-contatcs-en.pdf'}
-        download={'kerolls-contacts.pdf'}
-      >
-        {t('btns.secondary')}
-      </Button>
-
-      <Button
         variant='contained'
         color='primary'
         sx={{ ...styles.btnsAction, ...styles.btnPrimary }}

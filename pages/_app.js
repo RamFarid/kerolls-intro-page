@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { CacheProvider } from '@emotion/react'
 import CssBaseline from '@mui/material/CssBaseline'
-import { appWithTranslation } from 'next-i18next'
+import { appWithTranslation, useTranslation } from 'next-i18next'
 import createEmotionCache from '../utility/createEmotionCach'
 import '@/styles/globals.css'
 import darkTheme from '@/styles/theme/darkTheme'
@@ -16,6 +16,9 @@ const MyApp = ({
   emotionCache = clientSideEmotionCache,
   pageProps,
 }) => {
+  const {
+    i18n: { language, dir },
+  } = useTranslation()
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
   useEffect(() => {
@@ -44,7 +47,9 @@ const MyApp = ({
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         {isLoading && <Loader />}
-        <Component {...pageProps} />
+        <main lang={language} dir={dir(language)}>
+          <Component {...pageProps} />
+        </main>
       </ThemeProvider>
     </CacheProvider>
   )

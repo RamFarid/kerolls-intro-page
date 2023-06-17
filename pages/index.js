@@ -5,17 +5,14 @@ import Header from '@/components/Header'
 import IntroducingCard from '@/components/IntroducingCard'
 import Actions from '@/components/Actions'
 import Links from '@/components/Links'
-import IntroducingText from '@/components/IntroducingText'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const {
-    t,
-    i18n: { language, dir },
-  } = useTranslation()
+  const { t } = useTranslation()
   return (
     <>
       <Head>
@@ -24,15 +21,16 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={inter.className} lang={language} dir={dir(language)}>
-        <Header />
+      <div className={inter.className}>
+        {/* <Header /> */}
         <Container maxWidth='sm'>
           <IntroducingCard />
           <Actions />
           <Links />
-          <IntroducingText />
+          {/* <IntroducingText /> */}
         </Container>
-      </main>
+        <Footer />
+      </div>
     </>
   )
 }

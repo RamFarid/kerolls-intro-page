@@ -1,17 +1,19 @@
 {
-  "title": "Kerolls Tawfik Salon",
+  "title": "Kerolls Tawfik",
   "card": {
     "title": "Kerolls Tawfik",
-    "subtitle": "Owner of a hairdressing salon"
+    "subtitle": "Beauty Salon"
   },
   "btns": {
-    "primary": "CONNECT",
-    "secondary": "SAVE CONTACTS"
+    "primary": "SAVE CONTACTS"
   },
-  "introducingText": "My salon provided many services not only hair straightener visit me now",
-  "address": "Behind family land، El Doblomasiean Street Branch from Ahmed bahgat street, Corniche El Maadi, 11728",
-  "offer": {
-    "title": "Special offer for you!",
-    "body": "Come to Kerolls Salon and enjoy <b style=\"font-weight: 900;\">free</b> hair straightener and hair dryer on Wednesday of the first week of every month"
-  }
+  "contacts": {
+    "bride": {
+      "title": "Bride Contacts"
+    },
+    "salon": {
+      "title": "Salon Contacts"
+    }
+  },
+  "address": "- Maadi Corniche, the entrance to the Embassy of Japan<br />- Tower 2 Middle, Othman Towers, Diplomatseen St., off Ahmed Bahgat St., in front of the back door of Metro Supermarket"
 }

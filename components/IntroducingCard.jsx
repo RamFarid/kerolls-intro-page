@@ -29,7 +29,7 @@ function IntroducingCard() {
   return (
     <Card sx={styles.card}>
       <CardMedia
-        image='/imgs/personal-photo.jpg'
+        image='/imgs/kerolls-bora.jpg'
         title='Kerolls Tawfik'
         sx={styles.cardMedia}
       />
