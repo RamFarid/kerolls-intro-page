@@ -1,4 +1,3 @@
-import { FacebookRounded } from '@mui/icons-material'
 import { Stack } from '@mui/material'
 
 function LinkItem({ children }) {
