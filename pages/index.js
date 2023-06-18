@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Container from '@mui/material/Container'
 import IntroducingCard from '@/components/IntroducingCard'
-import Actions from '@/components/Actions'
 import Links from '@/components/Links'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -23,7 +22,6 @@ export default function Home() {
       <div className={inter.className}>
         <Container maxWidth='sm'>
           <IntroducingCard />
-          <Actions />
           <Links />
         </Container>
         <Footer />
