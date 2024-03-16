@@ -21,6 +21,7 @@ function Footer() {
       justifyContent={'space-between'}
       px={2}
       mb={2}
+      alignItems={'center'}
       bgcolor={'background.card'}
     >
       <Box fontSize={'13px'}>

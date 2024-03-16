@@ -18,24 +18,21 @@ function Contacts() {
   const { t } = useTranslation()
   return (
     <Stack gap={3} mt={2}>
-      <Stack direction={'row'}>
-        <Avatar sx={{ bgcolor: 'transparent' }}>
+      <Stack direction={'row'} gap={1.4}>
+        <Avatar sx={{ bgcolor: 'transparent', width: '30px' }}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             style={{
               width: '100%',
               height: '100%',
             }}
-            src={
-              'https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg'
-            }
+            src={'/imgs/Google_Maps_icon.svg'}
             alt='Google maps'
           />
         </Avatar>
         <Link
           href={'https://goo.gl/maps/35MK7UFuf8V4ZWbu8'}
           target='_blank'
-          textAlign={'center'}
           color={'inherit'}
           dangerouslySetInnerHTML={{ __html: t('address') }}
         />
@@ -52,7 +49,14 @@ function Contacts() {
           }}
         >
           <CardContent>
-            <ContactTitle text={t('contacts.salon.title')} />
+            <Typography
+              component={'h4'}
+              sx={{ fontSize: { xs: '18px', sm: '22px' } }}
+              align='center'
+              noWrap
+            >
+              {t('contacts.salon.title')}
+            </Typography>
             <LinkItem>
               <LinkAvatar>
                 <FacebookOutlinedIcon sx={{ color: '#3b5998' }} />
@@ -90,14 +94,21 @@ function Contacts() {
           }}
         >
           <CardContent>
-            <ContactTitle text={t('contacts.bride.title')} />
+            <Typography
+              component={'h4'}
+              sx={{ fontSize: { xs: '18px', sm: '22px' } }}
+              align='center'
+              noWrap
+            >
+              {t('contacts.bride.title')}
+            </Typography>
             <LinkItem>
               <LinkAvatar>
                 <FacebookOutlinedIcon sx={{ color: '#3b5998' }} />
               </LinkAvatar>
               <LinkText
-                link={'https://www.facebook.com/kerolls.tawfik'}
-                text={'kerolls.tawfik'}
+                link={'https://www.facebook.com/kerolls.tawfik1'}
+                text={'kerolls.tawfik1'}
               />
             </LinkItem>
             <LinkItem>

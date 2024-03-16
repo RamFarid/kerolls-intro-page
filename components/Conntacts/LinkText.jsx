@@ -6,7 +6,7 @@ function LinkText({ text, link }) {
       href={link}
       target='_blank'
       color={'text.primary'}
-      sx={{ direction: 'ltr' }}
+      sx={{ direction: 'ltr', whiteSpace: 'nowrap', wordWrap: 'break-word' }}
     >
       <Typography fontSize={'12px'}>{text}</Typography>
     </Link>

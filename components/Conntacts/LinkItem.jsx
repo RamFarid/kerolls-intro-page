@@ -2,7 +2,7 @@ import { Stack } from '@mui/material'
 
 function LinkItem({ children }) {
   return (
-    <Stack direction={'row'} gap={1.2} alignItems={'center'} mb={1}>
+    <Stack direction={'row'} alignItems={'center'} mb={1}>
       {children}
     </Stack>
   )
