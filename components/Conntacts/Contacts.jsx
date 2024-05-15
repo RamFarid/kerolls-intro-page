@@ -107,7 +107,7 @@ function Contacts() {
                 <FacebookOutlinedIcon sx={{ color: '#3b5998' }} />
               </LinkAvatar>
               <LinkText
-                link={'https://www.facebook.com/kerolls.tawfik1'}
+                link={'https://www.facebook.com/kerolls.tawfik/'}
                 text={'kerolls.tawfik1'}
               />
             </LinkItem>
