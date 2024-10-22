@@ -6,6 +6,7 @@ import {
   Link,
   Avatar,
   Divider,
+  Box,
 } from '@mui/material'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
 import InstagramIcon from '@mui/icons-material/Instagram'
@@ -87,9 +88,17 @@ function Contacts() {
             <Divider sx={{ my: 1 }} />
             <Typography>{t('contacts.salon.nailsTitle')}</Typography>
             <LinkItem>
-              <LinkAvatar>
-                <BackHandIcon color='primary' />
-              </LinkAvatar>
+              <Box
+                component={'img'}
+                width={'28px'}
+                height={'28px'}
+                sx={{
+                  objectFit: 'contain',
+                  objectPosition: 'center center',
+                  marginInlineEnd: 1.4,
+                }}
+                src='/imgs/nail-polish-svgrepo.svg'
+              />
               <LinkText
                 link={
                   'https://api.whatsapp.com/send?phone=201096521544&text=From%20your%20Website!'
