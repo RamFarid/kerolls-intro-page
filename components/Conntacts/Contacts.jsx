@@ -5,10 +5,12 @@ import {
   Typography,
   Link,
   Avatar,
+  Divider,
 } from '@mui/material'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
+import BackHandIcon from '@mui/icons-material/BackHand'
 import LinkItem from './LinkItem'
 import LinkAvatar from './LinkAvatar'
 import LinkText from './LinkText'
@@ -33,16 +35,12 @@ function Contacts() {
         <Link
           href={'https://goo.gl/maps/35MK7UFuf8V4ZWbu8'}
           target='_blank'
-          color={'inherit'}
+          color={'text.primary'}
+          underline='always'
           dangerouslySetInnerHTML={{ __html: t('address') }}
         />
       </Stack>
-      <Stack
-        direction={'row'}
-        gap={2}
-        justifyContent={'center'}
-        alignItems={'center'}
-      >
+      <Stack direction={'row'} gap={2} justifyContent={'center'}>
         <Card
           sx={{
             flex: 1,
@@ -84,6 +82,19 @@ function Contacts() {
                   'https://api.whatsapp.com/send?phone=201061628561&text=From%20your%20Website!'
                 }
                 text={'+20 1061628561'}
+              />
+            </LinkItem>
+            <Divider sx={{ my: 1 }} />
+            <Typography>{t('contacts.salon.nailsTitle')}</Typography>
+            <LinkItem>
+              <LinkAvatar>
+                <BackHandIcon color='primary' />
+              </LinkAvatar>
+              <LinkText
+                link={
+                  'https://api.whatsapp.com/send?phone=201096521544&text=From%20your%20Website!'
+                }
+                text={'+20 1096521544'}
               />
             </LinkItem>
           </CardContent>

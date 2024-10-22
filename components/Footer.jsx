@@ -24,11 +24,11 @@ function Footer() {
       alignItems={'center'}
       bgcolor={'background.card'}
     >
-      <Box fontSize={'13px'}>
-        <Typography>
+      <Typography fontSize={'13px'} component={'div'}>
+        <Typography fontSize={'inherit'}>
           @ 2023 Kerolls {"Tawfik's"} . All rights reserved
         </Typography>
-        <Typography>
+        <Typography fontSize={'inherit'}>
           Designed and Developed by{' '}
           <Link
             href='https://api.whatsapp.com/send?phone=201553706448&text=From%20your%20Website!'
@@ -39,7 +39,7 @@ function Footer() {
             Ram Farid
           </Link>
         </Typography>
-      </Box>
+      </Typography>
       <Select value={language} onChange={handleLanguageChange} size='small'>
         <MenuItem value='en'>English</MenuItem>
         <MenuItem value='ar'>العربية</MenuItem>
