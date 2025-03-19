@@ -16,8 +16,9 @@ function Location() {
           sx={{ marginInlineEnd: 0.5 }}
         />
         <Link
-          href='/styles'
+          href='https://goo.gl/maps/35MK7UFuf8V4ZWbu8'
           underline='always'
+          target='_blank'
           color={'primary'}
           maxWidth={400}
         >
