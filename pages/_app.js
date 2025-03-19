@@ -4,10 +4,9 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { appWithTranslation, useTranslation } from 'next-i18next'
 import createEmotionCache from '../utility/createEmotionCach'
 import '@/styles/globals.css'
-import darkTheme from '@/styles/theme/darkTheme'
-import { ThemeProvider } from '@mui/material'
 import { useRouter } from 'next/router'
 import Loader from '@/components/Loader'
+import ThemeContextProvider from '@/Contexts/ThemeContext'
 
 const clientSideEmotionCache = createEmotionCache()
 
@@ -21,6 +20,7 @@ const MyApp = ({
   } = useTranslation()
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
+
   useEffect(() => {
     const errorHanlder = (e) => {
       console.log(e)
@@ -42,16 +42,19 @@ const MyApp = ({
       router.events.off('routeChangeComplete', changeRouteEndHandler)
     }
   }, [router])
+
   return (
-    <CacheProvider value={emotionCache}>
-      <ThemeProvider theme={darkTheme}>
-        <CssBaseline />
-        {isLoading && <Loader />}
-        <main lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>
-          <Component {...pageProps} />
-        </main>
-      </ThemeProvider>
-    </CacheProvider>
+    <>
+      <CacheProvider value={emotionCache}>
+        <ThemeContextProvider>
+          <CssBaseline />
+          {isLoading && <Loader />}
+          <main lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'}>
+            <Component {...pageProps} />
+          </main>
+        </ThemeContextProvider>
+      </CacheProvider>
+    </>
   )
 }
 

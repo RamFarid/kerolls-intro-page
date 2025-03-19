@@ -1,21 +1,27 @@
-import { GlobalStyles } from '@mui/material'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap'
-          rel='stylesheet'
-        ></link>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta
+          name='title'
+          content='Kerolls Tawfik | Professional Hairstylist in Cairo'
+        />
+        <meta
+          name='description'
+          content='Discover the art of hairstyling with Kerolls Tawfik, a top hairstylist in Cairo specializing in bridal hair and elegant transformations. Book your appointment today!'
+        />
+        <meta
+          name='keywords'
+          content='Kerolls Tawfik, hairstylist, bridal hair, hair salon, Cairo, Egypt, professional hairstyling, wedding hair'
+        />
+        <meta name='author' content='Kerolls Tawfik' />
+        <meta name='robots' content='index, follow' />
       </Head>
       <body>
-        <GlobalStyles
-          styles={{ body: { fontFamily: "'Noto Naskh Arabic', serif" } }}
-        />
         <Main />
         <NextScript />
       </body>

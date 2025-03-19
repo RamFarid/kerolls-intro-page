@@ -16,6 +16,7 @@ import LinkItem from './LinkItem'
 import LinkAvatar from './LinkAvatar'
 import LinkText from './LinkText'
 import { useTranslation } from 'next-i18next'
+import Image from 'next/image'
 
 function Contacts() {
   const { t } = useTranslation()
@@ -41,6 +42,36 @@ function Contacts() {
           dangerouslySetInnerHTML={{ __html: t('address') }}
         />
       </Stack>
+      <Card
+        sx={{
+          flex: 1,
+        }}
+      >
+        <CardContent sx={{ mb: 0, pb: '0!important' }}>
+          <Typography
+            component={'h4'}
+            sx={{ fontSize: { xs: '18px', sm: '22px' } }}
+            align='center'
+            noWrap
+          >
+            {t('contacts.payments.title')}
+          </Typography>
+          <LinkItem>
+            <LinkAvatar>
+              <Image
+                height={40}
+                width={40}
+                src={'/imgs/unnamed.webp'}
+                alt='InstaPay Icon'
+              />
+            </LinkAvatar>
+            <LinkText
+              link={'https://ipn.eg/S/kerolls_tawfik/instapay/8LCfWW'}
+              text={'kerolls_tawfik@instapay'}
+            />
+          </LinkItem>
+        </CardContent>
+      </Card>
       <Stack direction={'row'} gap={2} justifyContent={'center'}>
         <Card
           sx={{

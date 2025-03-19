@@ -5,7 +5,7 @@ function Loader() {
   return (
     <Box
       sx={{
-        position: 'absolute',
+        position: 'fixed',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

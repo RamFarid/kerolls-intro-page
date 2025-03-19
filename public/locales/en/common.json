@@ -1,20 +1,34 @@
 {
   "title": "Kerolls Tawfik",
   "card": {
-    "title": "Kerolls Tawfik",
-    "subtitle": "Beauty Salon"
+    "title": "Kerolls Tawfik Salon",
+    "subtitle": "Premium hair styling, makeup, and nail services for all occasions"
   },
   "btns": {
-    "primary": "SAVE CONTACTS"
+    "primary": "SAVE CONTACTS",
+    "copy": "Copy"
   },
   "contacts": {
     "bride": {
-      "title": "Bride Contacts"
+      "title": "Bride Contacts",
+      "fb": "Facebook",
+      "wa": "WhatsApp",
+      "ig": "Instagram"
     },
     "salon": {
       "title": "Salon Contacts",
-      "nailsTitle": "For Nails only"
+      "nailOnly": "WhatsApp For Nails only",
+      "fb": "Facebook",
+      "wa": "WhatsApp",
+      "ig": "Instagram"
+    },
+    "payments": {
+      "title": "Payment Methods",
+      "instaPay": "Pay with InstPay"
+    },
+    "wifi": {
+      "title": "WiFi Password"
     }
   },
-  "address": "Maadi Corniche, the entrance to the Embassy of Japan - Tower 2 Middle, Othman Towers, Diplomatseen St., off Ahmed Bahgat St., in front of the back door of Metro Supermarket"
+  "address": "Tower 2 Middle, Othman Towers, Diplomatseen St., off Ahmed Bahgat St., in front of the back door of Metro Supermarket - Maadi Corniche, the entrance to the Embassy of Japan"
 }
