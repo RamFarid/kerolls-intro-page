@@ -12,20 +12,13 @@ const ImageOverlay = ({ src, alt }) => {
         overflow: 'hidden',
         zIndex: -1,
         mx: 'auto',
+        backgroundImage: `url(${src})`,
+        backgroundPosition: 'center top',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
+        backgroundAttachment: 'fixed',
       }}
     >
-      {/* Background Image */}
-      <Box
-        component='img'
-        src={src}
-        alt={alt}
-        sx={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          objectPosition: 'center top',
-        }}
-      />
       {/* Gradient Overlay */}
       <Box
         sx={(t) => ({
